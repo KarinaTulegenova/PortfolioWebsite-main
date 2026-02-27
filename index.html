@@ -9,28 +9,27 @@
 	<meta property="og:title" content="KarinaTul" />
 	<meta property="og:description" content="Projects, skills, and contact information." />
 	<meta property="og:type" content="website" />
-	<meta name="theme-color" content="#0a1726" />
+	<meta name="theme-color" content="#f7f8fb" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@600&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/isadora-sans-alt" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<style>
 		:root {
-			--bg: #060d16;
-			--bg-soft: #0b1828;
-			--grid: rgba(106, 132, 163, .15);
-			--card: rgba(15, 30, 47, .78);
-			--card-solid: #13263b;
-			--text: #f2f7ff;
-			--muted: #a4bad2;
-			--primary: #2ec4b6;
-			--primary-2: #34d399;
-			--accent: #38bdf8;
-			--accent-2: #ff7a59;
-			--shadow: 0 16px 42px rgba(2, 10, 19, .46);
+			--bg: #f5f7fb;
+			--bg-soft: #eef2f8;
+			--grid: rgba(17, 24, 39, .07);
+			--card: rgba(255, 255, 255, .88);
+			--card-solid: #ffffff;
+			--text: #101828;
+			--muted: #344054;
+			--primary: #ffd166;
+			--primary-2: #ffb703;
+			--accent: #f9c74f;
+			--accent-2: #f4a261;
+			--shadow: 0 10px 24px rgba(2, 6, 23, .08);
 			--radius: 18px;
 		}
 
@@ -49,15 +48,15 @@
 
 		body {
 			margin: 0;
-			font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+			font-family: "Nunito", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 			color: var(--text);
 			line-height: 1.6;
 			letter-spacing: .15px;
 			background:
-				radial-gradient(1100px 620px at 88% -5%, rgba(56, 189, 248, .16), transparent 58%),
-				radial-gradient(920px 620px at 6% 22%, rgba(46, 196, 182, .14), transparent 58%),
-				radial-gradient(760px 520px at 80% 105%, rgba(255, 122, 89, .1), transparent 58%),
-				linear-gradient(175deg, #040a12 0%, #081321 46%, #0a1726 100%);
+				radial-gradient(1100px 620px at 88% -5%, rgba(255, 209, 102, .22), transparent 58%),
+				radial-gradient(920px 620px at 6% 22%, rgba(249, 199, 79, .18), transparent 58%),
+				radial-gradient(760px 520px at 80% 105%, rgba(244, 162, 97, .14), transparent 58%),
+				linear-gradient(175deg, #fcfdff 0%, #f5f7fb 46%, #edf2f8 100%);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -77,7 +76,7 @@
 		}
 
 		a {
-			color: #68dfff;
+			color: #111827;
 			text-decoration: none
 		}
 
@@ -98,8 +97,8 @@
 			top: 0;
 			z-index: 50;
 			backdrop-filter: blur(12px);
-			background: linear-gradient(to bottom, rgba(8, 19, 34, .88), rgba(8, 19, 34, .42));
-			border-bottom: 1px solid rgba(164, 186, 210, .2);
+			background: linear-gradient(to bottom, rgba(255, 255, 255, .95), rgba(255, 255, 255, .78));
+			border-bottom: 1px solid rgba(17, 24, 39, .12);
 		}
 
 		.nav {
@@ -120,30 +119,32 @@
 
 		.logo .mark {
 			font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-			color: var(--primary);
+			color: #111827;
 			font-size: 14px;
 		}
 
 		.logo .slug {
 			opacity: .96;
 			font-size: 15px;
+			font-family: "Isadora Sans Alt", "Isadora", "Nunito", sans-serif;
+			font-weight: 700;
 		}
 
 		nav a {
 			margin: 0 10px;
 			padding: 8px 12px;
 			border-radius: 999px;
-			color: #d8e7f8;
+			color: #111827;
 			transition: .2s ease;
 		}
 
 		nav a.active {
-			background: rgba(46, 196, 182, .16);
-			border: 1px solid rgba(46, 196, 182, .34)
+			background: rgba(17, 24, 39, .06);
+			border: 1px solid rgba(17, 24, 39, .16)
 		}
 
 		nav a:hover {
-			background: rgba(56, 189, 248, .12);
+			background: rgba(17, 24, 39, .08);
 		}
 
 		.cta {
@@ -157,9 +158,9 @@
 			place-items: center;
 			padding: 10px 16px;
 			border-radius: 12px;
-			border: 1px solid rgba(164, 186, 210, .26);
-			background: rgba(17, 36, 57, .8);
-			color: #eef7ff;
+			border: 1px solid rgba(17, 24, 39, .18);
+			background: #ffffff;
+			color: #111827;
 			box-shadow: var(--shadow);
 			transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 			font-weight: 600;
@@ -167,14 +168,14 @@
 
 		.btn:hover {
 			transform: translateY(-2px);
-			box-shadow: 0 14px 34px rgba(3, 12, 24, .5);
-			border-color: rgba(104, 223, 255, .42);
+			box-shadow: 0 12px 28px rgba(2, 6, 23, .12);
+			border-color: rgba(17, 24, 39, .35);
 			text-decoration: none;
 		}
 
 		.btn.primary {
-			background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-			color: #06212c;
+			background: linear-gradient(135deg, var(--primary) 0%, var(--primary-2) 100%);
+			color: #111827;
 			border: none;
 			font-weight: 700;
 		}
@@ -188,7 +189,7 @@
 		}
 
 		.hero-title {
-			font-family: "Space Grotesk", "Manrope", sans-serif;
+			font-family: "Isadora Sans Alt", "Isadora", "Nunito", sans-serif;
 			font-size: clamp(38px, 6.4vw, 64px);
 			line-height: 1.1;
 			margin: 0 0 12px;
@@ -207,18 +208,62 @@
 			gap: 10px
 		}
 
+		.hero-highlights {
+			display: grid;
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+			gap: 10px;
+			margin-top: 18px;
+		}
+
+		.hero-highlights .mini {
+			background: rgba(255, 255, 255, .92);
+			border: 1px solid rgba(17, 24, 39, .12);
+			border-radius: 12px;
+			padding: 10px 12px;
+			box-shadow: 0 8px 18px rgba(2, 6, 23, .06);
+		}
+
+		.hero-highlights .k {
+			display: block;
+			font-size: 11px;
+			color: #6b7280;
+			text-transform: uppercase;
+			letter-spacing: .55px;
+		}
+
+		.hero-highlights .v {
+			display: block;
+			font-weight: 800;
+			font-size: 18px;
+			line-height: 1.2;
+			color: #111827;
+		}
+
 		.tag {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
 			padding: 8px 13px;
 			border-radius: 999px;
-			background: rgba(14, 32, 50, .9);
-			border: 1px solid rgba(164, 186, 210, .28);
+			background: #ffffff;
+			border: 1px solid rgba(17, 24, 39, .16);
 			font-size: 13px;
-			color: #d9e9f8;
+			color: #111827;
+		}
+
+		.tag::before {
+			content: "";
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+			background: linear-gradient(135deg, #f4a261 0%, #ffd166 100%);
+			box-shadow: 0 0 0 2px rgba(244, 162, 97, .16);
+			flex: 0 0 9px;
 		}
 
 		.card {
 			background: var(--card);
-			border: 1px solid rgba(164, 186, 210, .18);
+			border: 1px solid rgba(17, 24, 39, .12);
 			border-radius: var(--radius);
 			padding: 20px;
 			box-shadow: var(--shadow);
@@ -228,8 +273,8 @@
 		.avatar {
 			aspect-ratio: 1/1;
 			border-radius: var(--radius);
-			background: radial-gradient(120px 120px at 30% 20%, rgba(255, 255, 255, .18), transparent 35%), linear-gradient(135deg, #19324e, #081727);
-			border: 1px solid rgba(164, 186, 210, .25);
+			background: radial-gradient(120px 120px at 30% 20%, rgba(255, 255, 255, .75), transparent 35%), linear-gradient(135deg, #f3f6fb, #dfe7f2);
+			border: 1px solid rgba(17, 24, 39, .14);
 			overflow: hidden;
 			position: relative
 		}
@@ -247,8 +292,8 @@
 			content: "";
 			position: absolute;
 			inset: 0;
-			background: radial-gradient(500px 220px at 80% 10%, rgba(56, 189, 248, .22), transparent 60%),
-				radial-gradient(300px 200px at 20% 90%, rgba(46, 196, 182, .18), transparent 60%);
+			background: radial-gradient(500px 220px at 80% 10%, rgba(255, 209, 102, .28), transparent 60%),
+				radial-gradient(300px 200px at 20% 90%, rgba(244, 162, 97, .2), transparent 60%);
 			pointer-events: none;
 		}
 
@@ -258,9 +303,17 @@
 		}
 
 		h2 {
-			font-family: "Space Grotesk", "Manrope", sans-serif;
+			font-family: "Isadora Sans Alt", "Isadora", "Nunito", sans-serif;
 			font-size: 32px;
 			margin: 0 0 16px
+		}
+
+		h1,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Isadora Sans Alt", "Isadora", "Nunito", sans-serif;
 		}
 
 		.title-bar {
@@ -294,26 +347,50 @@
 			flex-direction: column;
 			gap: 12px;
 			transition: transform .22s ease, border-color .22s ease;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
 		}
 
 		.project:hover {
 			transform: translateY(-4px);
-			border-color: rgba(104, 223, 255, .36);
+			border-color: rgba(17, 24, 39, .26);
+			box-shadow: 0 18px 34px rgba(2, 6, 23, .14);
+		}
+
+		.project::after {
+			content: "";
+			position: absolute;
+			inset: -120% -40% auto;
+			height: 220%;
+			background: linear-gradient(115deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+			transform: translateX(-130%) rotate(10deg);
+			transition: transform .7s ease;
+			pointer-events: none;
+		}
+
+		.project:hover::after {
+			transform: translateX(130%) rotate(10deg);
+		}
+
+		.project:hover .thumb img {
+			transform: scale(1.08);
+			opacity: .98;
 		}
 
 		.project .thumb {
 			height: 180px;
 			border-radius: 14px;
 			background:
-				linear-gradient(135deg, rgba(56, 189, 248, .28), rgba(255, 122, 89, .23)),
-				linear-gradient(135deg, #16314d, #0a1624);
-			border: 1px solid rgba(164, 186, 210, .22);
+				linear-gradient(135deg, rgba(255, 209, 102, .32), rgba(244, 162, 97, .24)),
+				linear-gradient(135deg, #f4f7fc, #e7edf6);
+			border: 1px solid rgba(17, 24, 39, .14);
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			font-weight: 700;
 			letter-spacing: .4px;
-			color: #eaf5ff;
+			color: #111827;
 		}
 
 		.project h3 {
@@ -366,8 +443,8 @@
 			width: 100%;
 			padding: 14px 16px;
 			border-radius: 12px;
-			border: 1px solid rgba(164, 186, 210, .2);
-			background: rgba(8, 21, 35, .88);
+			border: 1px solid rgba(17, 24, 39, .18);
+			background: #ffffff;
 			color: var(--text);
 			outline: none;
 			transition: border-color .2s ease, box-shadow .2s ease;
@@ -380,8 +457,8 @@
 
 		.field input:focus,
 		.field textarea:focus {
-			box-shadow: 0 0 0 3px rgba(56, 189, 248, .2);
-			border-color: rgba(56, 189, 248, .52)
+			box-shadow: 0 0 0 3px rgba(17, 24, 39, .14);
+			border-color: rgba(17, 24, 39, .4)
 		}
 
 		.small {
@@ -393,8 +470,8 @@
 			height: 180px;
 			border-radius: 14px;
 			overflow: hidden;
-			border: 1px solid rgba(164, 186, 210, .24);
-			background: linear-gradient(135deg, #16314d, #0a1624);
+			border: 1px solid rgba(17, 24, 39, .14);
+			background: linear-gradient(135deg, #f4f7fc, #e7edf6);
 		}
 
 		.thumb img {
@@ -427,10 +504,10 @@
 		}
 
 		.carousel .carousel-caption {
-			background: rgba(7, 20, 33, .7);
+			background: rgba(255, 255, 255, .86);
 			border-radius: 10px;
 			padding: .5rem .75rem;
-			color: #eaf5ff;
+			color: #111827;
 		}
 
 		.carousel-indicators [data-bs-target] {
@@ -458,6 +535,10 @@
 
 			.hero-title {
 				font-size: 38px
+			}
+
+			.hero-highlights {
+				grid-template-columns: 1fr;
 			}
 
 			.span-6,
@@ -512,10 +593,6 @@
 				<a href="#certificates">Certificates</a>
 				<a href="#contact">Contact</a>
 			</nav>
-			<div class="cta">
-				<a class="btn" href="mailto:241438@astanait.edu.kz">Email</a>
-				<a class="btn primary" href="https://t.me/karinatul" target="_blank" rel="noopener">Telegram</a>
-			</div>
 		</div>
 	</header>
 
@@ -526,14 +603,27 @@
 				<div class="title-bar"></div>
 				<p class="hero-sub">I’m Karina — a software developer ✦</p>
 				<div class="tags">
-					<span class="tag">HTML/CSS/JS</span>
+					<span class="tag">Java</span>
+					<span class="tag">JavaScript</span>
+					<span class="tag">TypeScript</span>
+					<span class="tag">React</span>
+					<span class="tag">Redux Toolkit</span>
+					<span class="tag">Node.js</span>
+					<span class="tag">REST API</span>
+					<span class="tag">MongoDB</span>
 					<span class="tag">PostgreSQL</span>
-					<span class="tag">Java • Algorithms</span>
-					<span class="tag">UI/UX</span>
+					<span class="tag">Git</span>
 				</div>
 				<div class="k-row" style="margin-top:18px">
 					<a class="btn primary" href="#projects">View Projects</a>
+					<a class="btn" href="assets/Karina_Tulegenova_CV.pdf" download="Karina_Tulegenova_CV.pdf">Download CV</a>
 					<a class="btn" href="#contact">Contact Me</a>
+				</div>
+				<div class="hero-highlights">
+					<div class="mini"><span class="k">GPA</span><span class="v">3.5</span></div>
+					<div class="mini"><span class="k">SOC GPA</span><span class="v">3.89</span></div>
+					<div class="mini"><span class="k">Internships</span><span class="v">3</span></div>
+					<div class="mini"><span class="k">Main Stack</span><span class="v">Java + React</span></div>
 				</div>
 			</div>
 			<div class="card avatar">
@@ -553,10 +643,15 @@
 				</p>
 				<ul>
 					<li>🎓 Studying <strong>Software Engineering (2024–2027)</strong></li>
-					<li>👩‍🏫 Former <strong>Informatics Teacher</strong> at Umskul (<em>Jul 2024 – Feb 2025</em>)</li>
+					<li>📊 <strong>GPA:</strong> <strong>3.5</strong></li>
+					<li>📈 <strong>SOC GPA:</strong> <strong>3.89</strong></li>
 					<li>🛠 Skilled in <strong>Java, SQL, Web Development, and Algorithms</strong></li>
 					<li>🧠 Exploring <strong>AI-powered solutions</strong> and <strong>Full Stack Development</strong>
 					</li>
+					<li>💼 <strong>Internships:</strong> Former Informatics Teacher at <strong>Umskul</strong> (<em>Jul
+							2024 – Feb 2025</em>), Full-Stack Developer Intern at <strong>TOO "TECHORDA"</strong>
+						(<em>Dec 2025 – Feb 2026</em>), and Python Tutor Intern at <strong>SCP School</strong> (<em>Sep
+							2025 – Nov 2025</em>)</li>
 				</ul>
 			</div>
 		</section>
@@ -565,6 +660,25 @@
 			<h2>Projects</h2>
 			<div class="title-bar"></div>
 			<div class="grid">
+				<!-- AI LEARNING ASSISTANT -->
+				<article class="span-6 project card">
+					<div class="thumb">
+						<img src="assets/4.png" alt="AI Learning Assistant preview">
+					</div>
+					<h3>AI Learning Assistant</h3>
+					<p class="muted">Educational web app for uploading materials and accelerating learning with AI tools.
+					</p>
+					<div class="k-row"><span class="tag">React</span><span class="tag">TS</span><span
+							class="tag">AI Features</span><span class="tag">Frontend</span></div>
+					<div class="k-row">
+						<a class="btn primary"
+							href="https://ai-learning-assistant-8sclct0hk-karinas-projects-f133455d.vercel.app/"
+							target="_blank" rel="noopener">Live Demo</a>
+						<a class="btn" href="https://github.com/KarinaTulegenova/ai-learning-assistant" target="_blank"
+							rel="noopener">GitHub</a>
+					</div>
+				</article>
+
 				<!-- PIZZA APP -->
 				<article class="span-6 project card">
 					<div class="thumb">
@@ -587,23 +701,77 @@
 					</div>
 					<h3>Bank — Accounts & Transfers</h3>
 					<p class="muted">Interactive banking interface: open accounts, transfer funds, invest, and pay for
-						services. Clean
-						components and form validation.</p>
+						services. Clean components, form validation, and Java Spring Boot backend integration.</p>
 					<div class="k-row"><span class="tag">React</span><span class="tag">Form Handling</span><span
-							class="tag">UI
-							Components</span></div>
+							class="tag">UI Components</span><span class="tag">Java Spring Boot</span></div>
 					<div class="k-row"><a class="btn" href="https://github.com/KarinaTulegenova/SDP_Assignment-5"
 							target="_blank" rel="noopener">GitHub</a></div>
 				</article>
+				<!-- HABIT TRACKER -->
 				<article class="span-6 project card">
 					<div class="thumb">
-						<img src="pr/photo_2025-10-23_00-46-21.jpg" alt="Bank App UI preview">
+						<img src="assets/5.png" alt="Habit Tracker preview">
+					</div>
+					<h3>Habit Tracker</h3>
+					<p class="muted">Habit and progress tracking app to build routines and monitor consistency.</p>
+					<div class="k-row"><span class="tag">Web App</span><span class="tag">Productivity</span><span
+							class="tag">Tracking</span></div>
+					<div class="k-row"><a class="btn" href="https://github.com/KarinaTulegenova/HabitTracker"
+							target="_blank" rel="noopener">GitHub</a></div>
+				</article>
+
+				<!-- HEALTH ACADEMY SITE -->
+				<article class="span-6 project card">
+					<div class="thumb">
+						<img src="assets/6.png" alt="Health Academy preview">
+					</div>
+					<h3>Hospital Management Website</h3>
+					<p class="muted">Management-focused web platform for hospital workflows and academic health
+						processes.</p>
+					<div class="k-row"><span class="tag">Django</span><span class="tag">Python</span><span
+							class="tag">Backend</span></div>
+					<div class="k-row"><a class="btn" href="https://github.com/KarinaTulegenova/HealthAcademySite"
+							target="_blank" rel="noopener">GitHub</a></div>
+				</article>
+
+				<!-- PET SHELTER -->
+				<article class="span-6 project card">
+					<div class="thumb">
+						<img src="assets/7.png" alt="Pet Shelter website preview">
+					</div>
+					<h3>Pet Shelter Website</h3>
+					<p class="muted">Website project focused on a pet shelter platform with clear structure, user-friendly
+						navigation, and Java Spring Boot backend architecture.</p>
+					<div class="k-row"><span class="tag">Web Development</span><span class="tag">UI/UX</span><span
+							class="tag">Frontend</span><span class="tag">Java Spring Boot</span></div>
+					<div class="k-row"><a class="btn" href="https://github.com/KarinaTulegenova/PetShelterSite"
+							target="_blank" rel="noopener">GitHub</a></div>
+				</article>
+
+				<!-- WEATHER NOTIFICATION SYSTEM -->
+				<article class="span-6 project card">
+					<div class="thumb">
+						<img src="assets/8.png" alt="Weather Notification System preview">
+					</div>
+					<h3>Weather Notification System</h3>
+					<p class="muted">Notification system that tracks weather changes and alerts users in time for better
+						planning.</p>
+					<div class="k-row"><span class="tag">Weather API</span><span class="tag">Notifications</span><span
+							class="tag">Backend</span></div>
+					<div class="k-row"><a class="btn"
+							href="https://github.com/KarinaTulegenova/WeatherNotificationSystem.git" target="_blank"
+							rel="noopener">GitHub</a></div>
+				</article>
+
+				<!-- TOP APP -->
+				<article class="span-6 project card">
+					<div class="thumb">
+						<img src="pr/photo_2025-10-23_00-46-21.jpg" alt="Top App preview">
 					</div>
 					<h3>Top App</h3>
-					<p class="muted">App</p>
-					<div class="k-row"><span class="tag">React</span><span class="tag">Form Handling</span><span
-							class="tag">UI
-							Components</span></div>
+					<p class="muted">Responsive app interface focused on clean layout, usability, and component-driven UI.</p>
+					<div class="k-row"><span class="tag">React</span><span class="tag">Frontend</span><span
+							class="tag">UI Components</span></div>
 					<div class="k-row"><a class="btn" href="https://github.com/KarinaTulegenova/top-app" target="_blank"
 							rel="noopener">GitHub</a></div>
 				</article>
@@ -673,14 +841,14 @@
 						</svg>
 						<span style="margin-left:8px">241438@astanait.edu.kz</span>
 					</a>
-					<a class="btn primary" href="https://t.me/karinatul" target="_blank" rel="noopener"
+					<a class="btn primary" href="https://t.me/karinatulegenova2006" target="_blank" rel="noopener"
 						aria-label="Telegram">
 						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 							<path
 								d="M21.5 4.5L2.8 11.9c-.7.29-.69 1.29.03 1.55l4.6 1.68 2 4.84c.32.77 1.39.85 1.83.13l2.87-4.6 4.7 3.45c.79.58 1.91.15 2.13-.81l2.72-12.03c.21-.95-.7-1.77-1.68-1.41z"
 								stroke="currentColor" stroke-width="1.2" />
 						</svg>
-						<span style="margin-left:8px">@karinatul</span>
+						<span style="margin-left:8px">@karinatulegenova2006</span>
 					</a>
 				</div>
 				<form id="contact-form" class="contact-form" autocomplete="on">
